@@ -14,6 +14,10 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
+    public Result newProvider() {
+        return ok(main.render("Register yourself with us!"));
+    }
+
     public Result register() {
         final Map<String, String[]> values = request().body().asFormUrlEncoded();
         String attr_list = values.get("attr_list")[0];
