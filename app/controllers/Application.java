@@ -30,7 +30,7 @@ public class Application extends Controller {
         try {
             test.keygen(pubfile, prvfile, mskfile, attr_list);
         }catch (Exception e) {
-
+            return ok(fail.render());
         }
         return ok(keys.render());
     }
