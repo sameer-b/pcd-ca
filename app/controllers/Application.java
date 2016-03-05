@@ -25,7 +25,6 @@ public class Application extends Controller {
         Cpabe test = new Cpabe();
 
         try {
-            test.setup(pubfile, mskfile);
             test.keygen(pubfile, prvfile, mskfile, attr_list);
         }catch (Exception e) {
 
