@@ -16,7 +16,6 @@ public class Application extends Controller {
 
     public Result register() {
         final Map<String, String[]> values = request().body().asFormUrlEncoded();
-        final String name = values.get("name")[0];
         String attr_list = values.get("attr_list")[0];
         String pubfile = "./public/keys/pub_key";
         String mskfile = "./public/keys/master_key";
